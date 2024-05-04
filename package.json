@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "abcd",
+  "version": "1.0.0",
+  "description": "practise",
+  "main": "server.js",
+  "author": "Pranav",
+  "license": "ISC"
+}
