@@ -3,6 +3,8 @@ const app = express()
 const db= require('./db');
 const Person= require('./models/person')
 const bodyParser= require('body-parser')
+const PORT= process.env.PORT || 3000
+require('dotenv').config();
 app.use(bodyParser.json());
 app.get('/', function (req, res) {
     res.send('Hello World')
@@ -81,4 +83,6 @@ app.delete('/person/:id', async (req,res)=>{
 })
 // const personRoutes= require('./routes/personRoutes')
 // app.use('/person',personRoutes);
-app.listen(4000)
+app.listen(PORT, ()=>{
+    console.log("listening on port number 3000");
+})
